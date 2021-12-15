@@ -11,7 +11,44 @@ body {
   color: white;
   background-color: #21212d;
   font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
-.movie-container {
+.showcase {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.seat {
+  width: 15px;
+  height: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  margin: 3px;
+
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
