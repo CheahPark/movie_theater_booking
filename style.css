@@ -56,17 +56,6 @@ ul {
   margin-left: 2px;
 }
 
-.seat {
-  width: 15px;
-  height: 12px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #6b6b85;
-  margin: 3px;
-
-  display: block;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -93,4 +82,32 @@ ul {
 .row .seat:nth-child(2),
 .row .seat:nth-child(6) {
   margin-right: 20px;
+}
+
+.seat {
+  width: 15px;
+  height: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #6b6b85;
+  margin: 3px;
+
+  display: block;
+}
+
+.seat:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.seat.occupied:hover {
+  transform: none;
+}
+
+.seat.occupied {
+  background-color: white;
+}
+
+.seat.selected {
+  background-color: #4adede;
 }
